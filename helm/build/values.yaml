@@ -1,0 +1,15 @@
+app:
+  name: wad23-poi-gateway-app
+  namespace: wad23
+  cluster: .apps.redhatdevhub.l07n.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/devhub-test/wad23-gateway
+  org: devhub-test
+  name: wad23-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: wad23/poi-gateway-app
+  tag: latest
